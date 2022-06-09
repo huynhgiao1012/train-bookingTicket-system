@@ -1,0 +1,217 @@
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/Scroll Group 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+}
+
+header .left {
+  margin: 25px 50px;
+}
+
+header .left img {
+  width: 80px;
+  height: 63px;
+}
+
+header .right {
+  margin: 25px 50px;
+}
+
+header .right a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header .right .lg {
+  background-color: #ba131a;
+  padding: 5px 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+main .container {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -35px;
+  margin-bottom: -23px;
+}
+
+main .container .head h3 {
+  background-color: #ba131a;
+  padding: 25px 35px 45px 35px;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 25px;
+}
+
+main .container .head .back i,
+main .container .head .back a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #012e6f;
+  padding-right: 5px;
+}
+
+main .container .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #ffffff;
+  margin-top: -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .content h1 {
+  color: #ba131a;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+main .container .content h2 {
+  color: #012e6f;
+  padding: 30px 0 10px 100px;
+}
+
+main .container .content .inside {
+  width: 90%;
+}
+
+main .container .content .inside form {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  border: 4px solid #012e6f;
+}
+
+main .container .content .inside form .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+main .container .content .inside form .line label {
+  color: #012e6f;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+main .container .content .inside form .line input[type="text"], main .container .content .inside form .line input[type="password"], main .container .content .inside form .line input[type="email"], main .container .content .inside form .line input[type="date"], main .container .content .inside form .line input[type="number"] {
+  border: 2px solid #ba131a;
+  width: 614px;
+  height: 66px;
+  border-radius: 14px;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .container .content .inside button {
+  color: #ffffff;
+  background-color: #ba131a;
+  border-radius: 34px;
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*# sourceMappingURL=rechargeBalanceUser.css.map */

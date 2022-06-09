@@ -1,0 +1,85 @@
+@import "_variables";
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../image/Scroll\ Group\ 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+  .left {
+    margin: 25px 50px;
+    img {
+      width: 80px;
+      height: 63px;
+    }
+  }
+  .right {
+    margin: 25px 50px;
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .lg {
+      background-color: $primary-color2;
+      padding: 5px 20px;
+      margin-left: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+main{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      h1{
+          color: $primary-color2;
+          font-size: 80px;
+          margin: 30px 0;
+      }
+      .box{
+          width:862px;
+          height: 453px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20px;
+          border: 4px solid $primary-color1;
+          a{
+            width: 315px;
+            height:67px;
+            border-radius: 34px;
+            text-align:center;
+            line-height:67px;
+            margin: 30px 0;
+            background-color: $primary-color2;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+      }
+  }
+}

@@ -1,0 +1,260 @@
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/Scroll Group 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+}
+
+header .left {
+  margin: 25px 50px;
+}
+
+header .left img {
+  width: 80px;
+  height: 63px;
+}
+
+header .right {
+  margin: 25px 50px;
+}
+
+header .right a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header .right .lg {
+  background-color: #ba131a;
+  padding: 5px 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+main .container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: -23px;
+}
+
+main .container .head span {
+  width: 285px;
+  height: 95px;
+  background-color: #012e6f;
+  position: relative;
+}
+
+main .container .head span a {
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 95px;
+}
+
+main .container .head span:first-child {
+  border-top-left-radius: 8px;
+}
+
+main .container .head span:last-child {
+  border-top-right-radius: 8px;
+}
+
+main .container .head .red {
+  background-color: #ba131a;
+}
+
+main .container .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container .content .top {
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+main .container .content .top form {
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+main .container .content .top form a {
+  background-color: #ba131a;
+  color: white;
+  width: 211px;
+  height: 100%;
+  line-height: 67px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 34px;
+  margin: 0px 40px;
+  text-decoration: none;
+}
+
+main .container .content .top form label {
+  color: #012e6f;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+main .container .content .top form input[type="text"] {
+  padding: 8px;
+  margin: 20px;
+  font-size: 25px;
+  width: 450px;
+  height: 50px;
+  border-radius: 13px;
+  border: 3px solid #012e6f;
+  color: #012e6f;
+}
+
+main .container .content .top form button {
+  cursor: pointer;
+  background-color: #ba131a;
+  color: white;
+  width: 155px;
+  height: 100%;
+  line-height: 67px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 34px;
+  border: none;
+}
+
+main .container .content .body {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 4px solid #012e6f;
+  border-radius: 24px;
+}
+
+main .container .content .body .list {
+  padding-right: 30px;
+}
+
+main .container .content .body .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #707070;
+}
+
+main .container .content .body .list li .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-align: center;
+  font-size: 25px;
+}
+
+main .container .content .body .list li .line div {
+  margin: 0px 40px;
+}
+
+main .container .content .body .list li .line div h4 {
+  color: #ba131a;
+}
+
+main .container .content .body .list li .line div .data {
+  color: #012e6f;
+  padding: -20px 0px;
+}
+
+main .container .content .body .list li button {
+  background-color: #012e6f;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 14px;
+  border: none;
+  margin: 0px 20px;
+}
+/*# sourceMappingURL=manageTrip.css.map */

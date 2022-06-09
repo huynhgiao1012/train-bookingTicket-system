@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCAT Booking Ticket</title>
+  <link rel="stylesheet" href="./styles/firstpage.css" />
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/FE/image/firstpage.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/FE/image/firstpage2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/FE/image/firstpage3.png" style="width:100%">
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </div>
+  <header>
+    <div class="hleft">
+      <img src="https://github.com/MayPham2571/train-booking-ticket-system/blob/main/UI/Asset/logo@2x.png?raw=true"
+        alt="" />
+    </div>
+    <div class="hright">
+      <a href="register.html">Register</a>
+      <a class="lg" href="SignIn.html">Sign in</a>
+    </div>
+  </header>
+  <div class="container ">
+    <div class="head">
+      <h3>Train</h3>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="flex">
+          <div class="rbox custom-select" style="width: 600px">
+            <h4>FROM</h4>
+            <select>
+              <option value="0">Select the source</option>
+              <option value="1">Ho Chi Minh</option>
+              <option value="2">Da Nang</option>
+              <option value="3">Ha Noi</option>
+              <option value="4">City A</option>
+            </select>
+          </div>
+          <div class="lbox custom-select" style="width: 600px">
+            <h4>TO</h4>
+            <select>
+              <option value="0">Select the destination</option>
+              <option value="1">Nha Trang</option>
+              <option value="2">Hue</option>
+              <option value="3">Lam Dong</option>
+              <option value="4">City B</option>
+            </select>
+          </div>
+        </div>
+        <div class="search">
+          <a href="SignIn.html">Search Trains</a>
+          <div>
+            <img class="icon" src="/UI/Asset/arrow-right.png">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="other">
+        <div class="lother">
+          <a>Popular Destination</a>
+          <img src="/UI/Asset/search-sharp.png" class="sort">
+        </div>
+        <div class="rother">
+          <a href="SignIn.html">Explore All</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/firstpage.js"></script>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+  background-image: url("../image/Group_11(3).png");
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header .HContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 50px;
+}
+
+header .HContainer .logo img {
+  width: 79.46px;
+}
+
+header .HContainer a {
+  color: #012e6f;
+  font-size: 25px;
+}
+
+header .HContainer a i {
+  padding-right: 5px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container h1 {
+  color: #ba131a;
+  font-size: 83px;
+  margin: 30px 0;
+}
+
+main .container form {
+  color: #012e6f;
+}
+
+main .container form label {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+main .container form input[type="text"], main .container form input[type="password"], main .container form input[type="email"], main .container form input[type="date"] {
+  border: 2px solid #012e6f;
+  width: 614px;
+  height: 86px;
+  border-radius: 14px;
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+main .container form .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container form .center input[type="submit"] {
+  color: #fff;
+  width: 199px;
+  height: 62px;
+  background-color: #ba131a;
+  font-size: 29px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main .container form .center .register {
+  padding-top: 50px;
+}
+
+main .container form .center span, main .container form .center a {
+  font-size: 25px;
+  padding-top: 0;
+  color: #fff;
+}
+
+main .container form .center a {
+  color: #fff;
+  font-weight: bold;
+  padding-left: 15px;
+}
+/*# sourceMappingURL=resetpw.css.map */

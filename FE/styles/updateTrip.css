@@ -1,0 +1,137 @@
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+
+body {
+  margin: 0;
+  background-color: #d8d8d8;
+  font-family: sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/Scroll Group 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+}
+
+header .hleft {
+  margin: 25px 50px;
+}
+
+header .hleft img {
+  width: 80px;
+  height: 63px;
+}
+
+header .hright {
+  margin: 25px 50px;
+}
+
+header .hright a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header .hright .lg {
+  background-color: #ba131a;
+  padding: 5px 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -38px;
+  margin-bottom: -23px;
+}
+
+.container .head h3 {
+  background-color: #012e6f;
+  padding: 25px 55px;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 25px;
+}
+
+.container .head .back i,
+.container .head .back a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #012e6f;
+  padding-right: 5px;
+}
+
+.container .content {
+  background-color: #ffffff;
+  margin-top: -51px;
+  padding-bottom: 10px;
+}
+
+.container .content h1 {
+  color: #ba131a;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+.container .content .form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container .content .form table {
+  margin: 10px auto;
+}
+
+.container .content .form table tr th {
+  padding: 20px;
+  text-align: start;
+}
+
+.container .content .form table tr th label {
+  color: #012e6f;
+  font-size: 27px;
+}
+
+.container .content .form table tr td {
+  padding: 5px 0px;
+}
+
+.container .content .form table tr td input {
+  width: 400px;
+  font-size: 28px;
+  padding: 13px;
+  border: 1px solid #d8d8d8;
+}
+
+.container .content .form table tr td button {
+  background-color: #ba131a;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 28px;
+  border: none;
+}
+/*# sourceMappingURL=updateTrip.css.map */

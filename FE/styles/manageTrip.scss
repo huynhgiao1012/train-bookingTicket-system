@@ -1,0 +1,181 @@
+@import "_variables";
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../image/Scroll\ Group\ 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+  .left {
+    margin: 25px 50px;
+    img {
+      width: 80px;
+      height: 63px;
+    }
+  }
+  .right {
+    margin: 25px 50px;
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .lg {
+      background-color: $primary-color2;
+      padding: 5px 20px;
+      margin-left: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+main {
+  flex-grow: 1;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: -20px;
+      margin-bottom: -23px;
+      span {
+        width: 285px;
+        height: 95px;
+        background-color: $primary-color1;
+        position: relative;
+        a {
+          font-weight: bold;
+          color: white;
+          font-size: 25px;
+          text-align: center;
+          line-height: 95px;
+        }
+      }
+      span:first-child {
+        border-top-left-radius: 8px;
+      }
+      span:last-child {
+        border-top-right-radius: 8px;
+      }
+      .red {
+        background-color: $primary-color2;
+      }
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .top {
+        margin-bottom: 20px;
+        padding-top: 50px;
+        form {
+          height: 67px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          a {
+            background-color: $primary-color2;
+            color: white;
+            width: 211px;
+            height: 100%;
+            line-height: 67px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 34px;
+            margin: 0px 40px;
+            text-decoration: none;
+          }
+          label {
+            color: $primary-color1;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 30px;
+          }
+          input[type="text"] {
+            padding: 8px;
+            margin: 20px;
+            font-size: 25px;
+            width: 450px;
+            height: 50px;
+            border-radius: 13px;
+            border: 3px solid $primary-color1;
+            color: $primary-color1;
+          }
+          button {
+            cursor: pointer;
+            background-color: $primary-color2;
+            color: white;
+            width: 155px;
+            height: 100%;
+            line-height: 67px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 34px;
+            border: none;
+          }
+        }
+      }
+      .body {
+        width: 100%;
+        flex-grow: 1;
+        border: 4px solid $primary-color1;
+        border-radius: 24px;
+        .list {
+          padding-right: 30px;
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid #707070;
+            .line {
+              display: flex;
+              justify-content: space-between;
+              align-items: baseline;
+              text-align: center;
+              font-size: 25px;
+              div {
+                margin: 0px 40px;
+                h4 {
+                  color: $primary-color2;
+                }
+                .data {
+                  color: $primary-color1;
+                  padding: -20px 0px;
+                }
+              }
+            }
+            button {
+              background-color: $primary-color1;
+              color: #ffffff;
+              padding: 20px;
+              font-size: 25px;
+              border-radius: 14px;
+              border: none;
+              margin: 0px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

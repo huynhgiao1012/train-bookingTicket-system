@@ -1,0 +1,127 @@
+@import "_variables";
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../image/Scroll\ Group\ 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+  .left {
+    margin: 25px 50px;
+    img {
+      width: 80px;
+      height: 63px;
+    }
+  }
+  .right {
+    margin: 25px 50px;
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .lg {
+      background-color: $primary-color2;
+      padding: 5px 20px;
+      margin-left: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: $primary-color2;
+      font-size: 83px;
+      margin: 30px 0;
+    }
+    form {
+      color: $primary-color1;
+      label {
+        font-weight: bold;
+        font-size: 30px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="date"] {
+        border: 2px solid $primary-color1;
+        width: 614px;
+        height: 86px;
+        border-radius: 14px;
+        font-size: 30px;
+        font-family: sans-serif;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        border: none;
+        background-color: $primary-color2;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        border-radius: 14px;
+        margin: 0px 220px;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input[type="submit"] {
+          // box-sizing: border-box;
+          // display: flex;
+          // align-items: center;
+          color: #fff;
+          width: 199px;
+          height: 62px;
+          background-color: $primary-color2;
+          font-size: 29px;
+          font-weight: bold;
+          border-radius: 30px;
+          border: none;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+        .register {
+          padding-top: 50px;
+        }
+        span,
+        a {
+          font-size: 25px;
+          padding-top: 0;
+        }
+        a {
+          color: $primary-color1;
+          font-weight: bold;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

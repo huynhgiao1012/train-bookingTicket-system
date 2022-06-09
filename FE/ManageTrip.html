@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Trip</title>
+    <link rel="stylesheet" href="./styles/manageTrip.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img
+          src="https://github.com/MayPham2571/train-booking-ticket-system/blob/main/UI/Asset/logo@2x.png?raw=true"
+          alt=""
+        />
+      </div>
+      <div class="right">
+        <a class="lg" href="FirstPage.html">Logout</a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="head">
+          <span><a href="ManageUser.html">Manage User</a></span>
+          <span class="red"><a href="ManageTicket.html">Manage Ticket</a></span>
+          <span><a href="ManageTrip.html">Manage Trip</a></span>
+        </div>
+        <div class="content">
+          <div class="top">
+            <form action="">
+              <a href="CreateTrip.html">Create Trip</a>
+              <label for="source">Source</label>
+              <input type="text" name="source" id="source" />
+              <label for="destination">Destination</label>
+              <input type="text" name="destination" id="destination" />
+              <button class="searchTrip">Search</button>
+            </form>
+          </div>
+          <div class="body">
+            <ul class="list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+  <script src="./js/manageTrip.js"></script>
+</html>

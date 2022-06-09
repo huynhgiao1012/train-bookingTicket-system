@@ -1,0 +1,91 @@
+
+@import "_variables";
+body{
+    background-image: url("../image/Group_11.png");
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    .HContainer{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 50px;
+        .logo{
+            img{
+                width: 79.46px;
+            }
+        }
+        a{
+            color: $primary-color1;
+            i{
+                padding-right: 5px;
+            }
+            font-size: 25px;
+        }
+    }
+}
+main{
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            color: $primary-color1;
+            font-size: 64px;
+            margin: 0;
+        }
+        form{
+            color: #fff;
+            label{
+                font-weight: bold;
+                font-size: 30px;
+                
+            }
+            input[type="text"],input[type="password"],input[type="email"],input[type="date"]{
+                border: 2px solid $primary-color2;
+                width: 614px;
+                height:66px;
+                border-radius: 14px;
+                font-size: 30px;
+                font-family: sans-serif;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .center{
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;
+                input[type="submit"]{
+                    // box-sizing: border-box;
+                    // display: flex;
+                    // align-items: center;
+                    color: #fff;
+                    width: 199px;
+                    height: 62px;
+                    background-color: $primary-color1;
+                    font-size: 29px;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    border: none;
+                    margin-top:20px;
+                    cursor: pointer;
+                }
+                span,a {
+                    font-size: 25px;
+    
+                }
+                a{
+                    color: #fff;
+                    font-weight: bold;
+                    padding-left:15px;
+                }
+            }
+        }
+    }
+}

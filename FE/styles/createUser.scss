@@ -1,0 +1,145 @@
+@import "_variables";
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../image/Scroll\ Group\ 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+  .left {
+    margin: 25px 50px;
+    img {
+      width: 80px;
+      height: 63px;
+    }
+  }
+  .right {
+    margin: 25px 50px;
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .lg {
+      background-color: $primary-color2;
+      padding: 5px 20px;
+      margin-left: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .container{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -35px;
+            margin-bottom: -23px;
+            h3 {
+              background-color: $primary-color2;
+              padding: 25px 35px 45px 35px;
+              color: white;
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+              font-size: 25px;
+            }
+            .back {
+              i,
+              a {
+                font-size: 25px;
+                text-decoration: none;
+                color: $primary-color1;
+                padding-right: 5px;
+              }
+            }
+          }
+          .content {
+            flex-grow: 1;
+            background-color: #ffffff;
+            margin-top: -25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+              color: $primary-color2;
+              text-align: center;
+              padding: 20px 0px;
+            }
+            h2{
+              color: $primary-color1;
+              padding: 30px 0 10px 100px;
+            }
+            .inside{
+                width: 90%;
+              form{
+                padding: 30px;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                border: 4px solid $primary-color1;
+                .line{
+                    display: flex;
+                    width: 1000px;
+                    justify-content:space-between;
+                    padding-bottom: 30px;
+                    label{
+                        color: $primary-color1;
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    input[type="text"],input[type="password"],input[type="email"],input[type="date"]{
+                        border: 2px solid $primary-color2;
+                        width: 614px;
+                        height:66px;
+                        border-radius: 14px;
+                        font-size: 30px;
+                        font-family: sans-serif;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+                }
+                
+              }
+              button {
+                color: #ffffff;
+                background-color: $primary-color2;
+                border-radius: 34px;
+                padding: 15px 20px;
+                border: none;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+              }
+              
+            }
+            
+          }
+    }
+}

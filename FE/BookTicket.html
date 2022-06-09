@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="./styles/bookTicket.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="hleft">
+        <img
+          src="https://github.com/MayPham2571/train-booking-ticket-system/blob/main/UI/Asset/logo@2x.png?raw=true"
+          alt=""
+        />
+      </div>
+      <div class="hright">
+        <a href="ChangePassword.html">Change Password</a>
+        <a class="lg" href="FirstPage.html">Logout</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="head">
+        <h3>Book Ticket</h3>
+        <div class="back">
+          <i class="fas fa-less-than"></i>
+          <a href="homepage.html">Back</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="stepProgressBar">
+          <div class="tablinks">
+            <p class="step-text">Choose Route</p>
+            <div class="bullet">1</div>
+          </div>
+          <div class="tablinks">
+            <p class="step-text">Route Confirmation</p>
+            <div class="bullet">2</div>
+          </div>
+          <div class="tablinks">
+            <p class="step-text">Customer Information</p>
+            <div class="bullet">3</div>
+          </div>
+          <div class="tablinks">
+            <p class="step-text">Success</p>
+            <div class="bullet bullet1">4</div>
+          </div>
+        </div>
+        <div id="Step1" class="tabcontent">
+          <div id="Step1content" class="Step1content">
+            <h3>FROM</h3>
+            <div class="dropdown">
+              <input
+                type="text"
+                placeholder="--SOURCE--"
+                id="source"
+                autocomplete="off"
+                onkeyup="filterFunction()"
+                onclick="myFunction()"
+              />
+              <div id="dropdownSource" class="dropSource dropdown-content">
+                <p>---</p>
+              </div>
+            </div>
+            <h3>TO</h3>
+            <div class="dropdown">
+              <input
+                type="text"
+                placeholder="--DESTINATION--"
+                id="destination"
+                autocomplete="off"
+                onkeyup="filterFunction2()"
+                onclick="myFunction2()"
+              />
+              <div id="dropdownDes" class="dropDes dropdown-content">
+                <p>---</p>
+              </div>
+            </div>
+            <button class="search">Search</button>
+          </div>
+          <div class="getTrip"></div>
+          <div id="stepBtn" class="stepBtn">
+            <button
+              id="nextBtn"
+              class="tablinks"
+              onclick="openStep(event, 'Step2')"
+            >
+              Next
+            </button>
+            <button
+              id="chooseOther"
+              class="chooseOther"
+              onclick="chooseAgain()"
+            >
+              Choose Again
+            </button>
+          </div>
+        </div>
+        <div id="Step2" class="tabcontent other">
+          <h1>Route Confirmation</h1>
+          <div class="routeInfo"></div>
+          <button
+            id="nextBtn2"
+            class="tablinks"
+            onclick="openStep(event, 'Step3')"
+          >
+            Next
+          </button>
+          <button
+            id="previousBtn"
+            class="tablinks"
+            onclick="openStep(event, 'Step1')"
+          >
+            Previous
+          </button>
+        </div>
+        <div id="Step3" class="tabcontent other">
+          <h1>User Detail</h1>
+          <div class="infoConfirm"></div>
+          <button
+            id="nextBtn3"
+            class="tablinks"
+            onclick="openStep(event, 'Step4')"
+          >
+            Finish
+          </button>
+          <button
+            id="previousBtn2"
+            class="tablinks"
+            onclick="openStep(event, 'Step2')"
+          >
+            Previous
+          </button>
+        </div>
+        <div id="Step4" class="tabcontent other">
+          <div class="step4"></div>
+          <button
+            id="Continue"
+            class="tablinks"
+            onclick="openStep(event, 'Step1')"
+          >
+            Continue Book
+          </button>
+          <a href="Payment.html">Payment</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/bookTicket.js"></script>
+</html>

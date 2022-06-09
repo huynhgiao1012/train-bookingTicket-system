@@ -1,0 +1,604 @@
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2f2;
+  font-family: sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/Scroll Group 1.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: cover;
+}
+
+header .hleft {
+  margin: 25px 50px;
+}
+
+header .hleft img {
+  width: 80px;
+  height: 63px;
+}
+
+header .hright {
+  margin: 25px 50px;
+}
+
+header .hright a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header .hright .lg {
+  background-color: #ba131a;
+  padding: 5px 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -35px;
+  margin-bottom: -23px;
+}
+
+.container .head h3 {
+  background-color: #012e6f;
+  padding: 25px 55px;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 25px;
+}
+
+.container .head .back i,
+.container .head .back a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #012e6f;
+  padding-right: 5px;
+}
+
+.container .content {
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.container .content .stepProgressBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .stepProgressBar .tablinks {
+  width: 800px;
+  text-align: center;
+  margin: 10px;
+}
+
+.container .content .stepProgressBar .tablinks .step-text {
+  margin-bottom: 10px;
+  color: #ba131a;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.container .content .stepProgressBar .tablinks .bullet {
+  z-index: 10;
+  border: 2px solid #ba131a;
+  height: 43px;
+  width: 43px;
+  border-radius: 100%;
+  color: #ba131a;
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+  line-height: 40px;
+}
+
+.container .content .stepProgressBar .tablinks .bullet.completed {
+  color: white;
+  background-color: #ba131a;
+}
+
+.container .content .stepProgressBar .tablinks .bullet::before {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 12px;
+  width: 400px;
+  z-index: 1;
+}
+
+.container .content .stepProgressBar .tablinks .bullet1::before {
+  content: none;
+}
+
+.container .content .stepProgressBar .tablinks .bullet.completed::after {
+  content: "";
+  background-color: #ba131a;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 12px;
+  width: 400px;
+  z-index: 2;
+}
+
+.container .content .stepProgressBar .tablinks .bullet1.completed::after {
+  content: none;
+}
+
+.container .content .tabcontent {
+  text-align: center;
+}
+
+.container .content .tabcontent button {
+  font-size: 20px;
+  background-color: #ba131a;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #ba131a;
+}
+
+.container .content .tabcontent a {
+  color: #ba131a;
+  font-size: 25px;
+}
+
+.container .content .tabcontent .Step1content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* The container <div> - needed to position the dropdown content */
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+}
+
+.container .content .tabcontent .Step1content h3 {
+  font-size: 25px;
+  color: #ba131a;
+}
+
+.container .content .tabcontent .Step1content button {
+  background-color: #ba131a;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #ba131a;
+}
+
+.container .content .tabcontent .Step1content input {
+  padding: 20px;
+  width: 200px;
+  border: 2px solid #ba131a;
+  border-radius: 14px;
+  margin: 0px 30px;
+  font-size: 25px;
+  color: #012e6f;
+}
+
+.container .content .tabcontent .Step1content input:focus {
+  outline: 2px solid #ba131a;
+}
+
+.container .content .tabcontent .Step1content input::-webkit-input-placeholder {
+  color: #012e6f;
+  text-align: center;
+}
+
+.container .content .tabcontent .Step1content input:-ms-input-placeholder {
+  color: #012e6f;
+  text-align: center;
+}
+
+.container .content .tabcontent .Step1content input::-ms-input-placeholder {
+  color: #012e6f;
+  text-align: center;
+}
+
+.container .content .tabcontent .Step1content input::placeholder {
+  color: #012e6f;
+  text-align: center;
+}
+
+.container .content .tabcontent .Step1content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.container .content .tabcontent .Step1content .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 35px;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ba131a;
+}
+
+.container .content .tabcontent .Step1content .dropdown .dropdown-content p {
+  color: #ba131a;
+  font-size: 25px;
+  padding: 8px 16px;
+  margin: 0px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .content .tabcontent .Step1content .dropdown .dropdown-content p:hover {
+  background-color: #ba131a;
+  color: white;
+}
+
+.container .content .tabcontent .Step1content .show {
+  display: block;
+}
+
+.container .content .tabcontent .getTrip {
+  margin-top: 20px;
+  font-size: 20px;
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+}
+
+.container .content .tabcontent .getTrip .dropdown-content {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.container .content .tabcontent .getTrip .show {
+  display: block;
+}
+
+.container .content .tabcontent .getTrip h2 {
+  color: #ba131a;
+  margin: 10px;
+}
+
+.container .content .tabcontent .getTrip .confirmSeat {
+  color: #ba131a;
+}
+
+.container .content .tabcontent .getTrip .confirmSeat div {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.container .content .tabcontent .getTrip .confirmSeat div label {
+  font-size: 1.5em;
+}
+
+.container .content .tabcontent .getTrip .confirmSeat div #seatNumber {
+  border: none;
+  font-size: 1.5em;
+  padding-left: 10px;
+  color: #ba131a;
+}
+
+.container .content .tabcontent .getTrip .trip {
+  width: 1200px;
+  border-radius: 10px;
+  margin: 10px auto;
+  border: 2px solid #012e6f;
+  display: inline-block;
+}
+
+.container .content .tabcontent .getTrip .trip .below hr {
+  margin: 10px;
+  border: 1px solid #ba131a;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum input[type="radio"] {
+  -webkit-appearance: none;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum input[type="radio"]:checked + label span,
+.container .content .tabcontent .getTrip .trip .below .seatNum input[type="radio"]:checked + label i {
+  color: #707070;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .left {
+  width: 300px;
+  border-right: 1px solid #ba131a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 10px;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .right {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 10px;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn div h4 {
+  color: #012e6f;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn div .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0px 10px;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn div .available {
+  background-color: #012e6f;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum .bBtn div .booked {
+  background-color: #ba131a;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum label {
+  text-align: center;
+  margin: 10px;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum label span {
+  display: block;
+  font-weight: bolder;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum label i {
+  font-size: 80px;
+  padding: 10px;
+  color: #012e6f;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .content .tabcontent .getTrip .trip .below .seatNum label i:hover {
+  color: #707070;
+}
+
+.container .content .tabcontent .getTrip .trip .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .tabcontent .getTrip .trip .title .tleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .tabcontent .getTrip .trip .title .tleft div {
+  margin: 15px 50px;
+}
+
+.container .content .tabcontent .getTrip .trip .title .tleft div h4 {
+  color: #012e6f;
+  margin: 0px;
+}
+
+.container .content .tabcontent .getTrip .trip .title .tleft div p {
+  color: #ba131a;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.container .content .tabcontent .getTrip .trip .title .tright {
+  margin-right: 50px;
+}
+
+.container .content .tabcontent .stepBtn {
+  display: none;
+}
+
+.container .content #Step2 h1,
+.container .content #Step3 h1,
+.container .content .step4 h1 {
+  color: #ba131a;
+}
+
+.container .content #Step2 table,
+.container .content #Step3 table,
+.container .content .step4 table {
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: left;
+}
+
+.container .content #Step2 table tr th,
+.container .content #Step3 table tr th,
+.container .content .step4 table tr th {
+  color: #ba131a;
+  padding-right: 10px;
+}
+
+.container .content #Step2 table tr td,
+.container .content #Step3 table tr td,
+.container .content .step4 table tr td {
+  color: #ba131a;
+  border: 3px solid #012e6f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid black;
+  -webkit-transition: 250ms background-color;
+  transition: 250ms background-color;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+button:disabled:hover {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.other {
+  display: none;
+}
+
+/* ===== Keyframes ===== */
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=bookTicket.css.map */

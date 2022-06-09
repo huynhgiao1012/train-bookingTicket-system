@@ -1,0 +1,329 @@
+@import "_variables";
+.container {
+  margin: 0px auto;
+  max-width: 1710px;
+}
+body {
+  background-color: #d8d8d8;
+  font-family: sans-serif;
+  // background-image: url("../image/firstpage.png");
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+
+.slideshow-container{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+
+  .mySlides{
+    display: none;
+  }
+  img {vertical-align: middle;}
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    color: gray;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+}
+
+header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position: 1% 1%;
+  margin-top: -950px;
+
+  .hleft {
+    margin: 25px 50px;
+    img {
+      width: 80px;
+      height: 63px;
+    }
+  }
+  .hright {
+    margin: 25px 50px;
+    a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+    .lg {
+      background-color: $primary-color2;
+      padding: 5px 20px;
+      margin-left: 15px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -35px;
+
+    .icon {
+      width: 15px;
+      height: 24px;
+      margin-top: 50px;
+    }
+
+    // margin-bottom: -23px;
+    h3 {
+      background-color: $primary-color1;
+      padding: 25px 105px;
+      color: white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      font-size: 30px;
+      margin-top: 380px;
+    }
+    .back {
+      i,
+      a {
+        font-size: 25px;
+        text-decoration: none;
+        color: $primary-color1;
+        padding-right: 5px;
+      }
+    }
+  }
+  .content {
+    background-color: #ffffff;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1710px;
+    height: 260px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+
+    h1 {
+      color: $primary-color2;
+      text-align: center;
+      padding: 20px 0px;
+      font-size: 50px;
+    }
+    h2 {
+      color: $primary-color1;
+      font-size: 40px;
+      margin-top: 35px;
+    }
+
+    .box {
+      width: 1710px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        margin: 70px;
+
+        .custom-select {
+          position: relative;
+          color: $primary-color2;
+          font-size: 24px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .custom-select select {
+          display: none;
+        }
+
+        .select-selected {
+          background-color: #ffffff;
+        }
+
+        .select-selected:after {
+          position: absolute;
+          content: "";
+          top: 14px;
+          right: 10px;
+          width: 0;
+          height: 0;
+          border: 6px solid transparent;
+          border-color: $primary-color2 transparent transparent transparent;
+          margin-top: 50px;
+          margin-right: 20px;
+        }
+
+        .select-selected.select-arrow-active:after {
+          border-color: transparent transparent $primary-color2 transparent;
+          top: 7px;
+        }
+
+        .select-items div,
+        .select-selected {
+          color: $primary-color2;
+          padding: 8px 16px;
+          border: 1px solid transparent;
+          // margin-left: -17px;
+          cursor: pointer;
+        }
+
+        .select-items {
+          position: absolute;
+          background-color: #ffffff;
+          top: 100%;
+          left: 0;
+          right: 0;
+          z-index: 99;
+        }
+
+        .select-hide {
+          display: none;
+        }
+
+        .select-items div:hover,
+        .same-as-selected {
+          background-color: $primary-color2;
+          color: #fff;
+        }
+        .rbox {
+          padding-right: 35px;
+          padding-left: 35px;
+          margin-right: 60px;
+          width: 730px;
+          height: 117px;
+          border-radius: 16px;
+          border: solid 1px #d8d8d8;
+
+          h4 {
+            font-size: 13px;
+            color: $primary-color1;
+          }
+        }
+        .lbox {
+          // padding-top: 15px;
+          padding-right: 35px;
+          padding-left: 35px;
+          width: 730px;
+          height: 117px;
+          border-radius: 16px;
+          border: solid 1px #d8d8d8;
+          
+          h4 {
+            font-size: 13px;
+            color: $primary-color1;
+          }
+        }
+      }
+    }
+
+    button {
+      color: #ffffff;
+      background-color: $primary-color2;
+      border-radius: 34px;
+      padding: 15px 20px;
+      border: none;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}
+
+.search {
+  width: 308px;
+  height: 76px;
+  border-radius: 13px;
+  background-color: $primary-color2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: -18px;
+  margin-left: 1300px;
+
+  a {
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .icon {
+    width: 29px;
+    height: 17px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    margin-bottom: 30px;
+  }
+}
+
+.other {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+
+  .lother {
+    a {
+      font-size: 23px;
+      color: $primary-color1;
+      margin-left: 20px;
+    }
+    .sort {
+      width: 16px;
+      height: 16px;
+      margin-top: 7px;
+      margin-left: 5px;
+    }
+  }
+
+  .rother {
+    a {
+      font-size: 23px;
+      color: $primary-color1;
+      margin-right: 20px;
+      margin-left: 1250px;
+      text-decoration: underline;
+    }
+  }
+}
